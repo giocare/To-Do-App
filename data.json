@@ -1,0 +1,18 @@
+[ 
+    {
+        "name": "eat",
+        "completed": false
+    },
+    {
+        "name": "sleep",
+        "completed": false
+    },
+    {
+        "name": "shopping",
+        "completed": true
+    },    
+    {
+        "name": "study",
+        "completed": false
+    }
+]

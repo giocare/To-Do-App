@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do </title>
+</head>
+<body>
+
+<button onclick="window.location.href='{{ url_for('logout') }}'" style="float: right">Log Out</button>
+<form action="" method="post">
+	<input type="text" name="task" placeholder="enter new task">
+	<input type="submit" value="submit">
+ </form>
+
+
+<h1>Welcome {{ name }}. Here is your to-do list:</h1>
+<ul>
+{% for item in file %}
+	{% if item['completed'] %}
+	<li><strike>{{item['content']}}</strike><button type="button" onclick="window.location.href='{{ url_for('deleteitem', id=item['id']) }}'">Delete</button>
+	{% else %}
+	<li> {{item['content']}}
+		<button type="button" onclick="window.location.href='{{ url_for('updateitem', id=item['id']) }}'">Update</button>
+		<button type="button" onclick="window.location.href='{{ url_for('deleteitem', id=item['id']) }}'">Delete</button>
+	</li>
+	{% endif %}
+{% endfor %}
+</ul>
+
+
+
+</body>
+</html>
