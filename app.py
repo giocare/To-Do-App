@@ -80,10 +80,13 @@ def todolist():
 
 	return render_template('todo.html', name=uname, file=file)
 
-@app.route('/update/<id>')
-def updateitem(id):
+@app.route('/update/<id>/<status>')
+def updateitem(id,status):
 	global cookies
-	response = requests.put('https://hunter-todo-api.herokuapp.com/todo-item/'+id, cookies=cookies, data = '{"completed":true}')
+	if status == 'False':
+		response = requests.put('https://hunter-todo-api.herokuapp.com/todo-item/'+id, cookies=cookies, data = '{"completed":true}')
+	if status == 'True':
+		response = requests.put('https://hunter-todo-api.herokuapp.com/todo-item/'+id, cookies=cookies, data = '{"completed":false}')
 	return redirect(url_for('todolist'))
 
 @app.route('/delete/<id>')

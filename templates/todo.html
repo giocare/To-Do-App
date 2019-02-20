@@ -16,10 +16,12 @@
 <ul>
 {% for item in file %}
 	{% if item['completed'] %}
-	<li><strike>{{item['content']}}</strike><button type="button" onclick="window.location.href='{{ url_for('deleteitem', id=item['id']) }}'">Delete</button>
+	<li><strike>{{item['content']}}</strike>
+		<button type="button" onclick="window.location.href='{{ url_for('updateitem', id=item['id'], status=item['completed']) }}'">Update</button>
+		<button type="button" onclick="window.location.href='{{ url_for('deleteitem', id=item['id']) }}'">Delete</button>
 	{% else %}
 	<li> {{item['content']}}
-		<button type="button" onclick="window.location.href='{{ url_for('updateitem', id=item['id']) }}'">Update</button>
+		<button type="button" onclick="window.location.href='{{ url_for('updateitem', id=item['id'], status=item['completed']) }}'">Update</button>
 		<button type="button" onclick="window.location.href='{{ url_for('deleteitem', id=item['id']) }}'">Delete</button>
 	</li>
 	{% endif %}
