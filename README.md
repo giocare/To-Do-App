@@ -6,7 +6,6 @@ The objective of this project to learn MVC, HTML, HTTP, REST API, JSON, Sessions
 Languages: Python (Flask), HTML
 
 ## Requirements
-Here are the requirements:
 1. Create a new user
 2. Log in as a user (no password required, just have someone type in their name)
 3. Be able to see and interact with their to-do items (and ONLY THEIRS, user should NOT be able to see other to-do items)
