@@ -3,10 +3,10 @@
 ## Description
 The objetive of this project to learn MVC, HTML, HTTP, REST API, JSON, Sessions and Cookies
 
-##Languages
+## Languages
 Languages: Python (Flask), HTML
 
-##Requirements
+## Requirements
 Here are the requirements:
 1. Create a new user
 2. Log in as a user (no password required, just have someone type in their name)
