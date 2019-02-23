@@ -1,6 +1,4 @@
 # To-Do-App
-
-## Description
 The objective of this project to learn MVC, HTML, HTTP, REST API, JSON, Sessions and Cookies
 
 Languages: Python (Flask), HTML
