@@ -15,6 +15,6 @@ Languages: Python (Flask), HTML
 
 
 ### Live Demo
-http://jessicatodoapp.herokuapp.com/
+https://jessicareact-todo.herokuapp.com/
 
-![My image](http://g.recordit.co/L4asN4ScS8.gif)
+![My image](http://g.recordit.co/dhaHEBS6Eo.gif)
